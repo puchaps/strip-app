@@ -1,0 +1,81 @@
+.title-and-descr {
+  width: 55%;
+
+  .title {
+    font-size: 50px;
+    color: #172438;
+  }
+
+  .descr {
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 1.5;
+    opacity: 0.6;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+};
+
+@media screen and(max-width: 1440px) {
+  .title-and-descr {
+    width: 50%;
+
+    .title {
+      font-size: 30px;
+    }
+    .descr {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+};
+
+@media screen and(max-width: 1200px) {
+  .title-and-descr {
+    .title {
+      font-size: 30px;
+    }
+    .descr {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+};
+
+@media screen and(max-width: 1200px) {
+  .title-and-descr {
+    .title {
+      font-size: 25px;
+    }
+    .descr {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  }
+};
+
+@media screen and(max-width: 768px) {
+  .title-and-descr {
+    width: 70%;
+    margin: 0 auto;
+
+    .btn {
+      button {
+        width: 30%;
+      }
+    }
+  }
+};
+
+@media screen and(max-width: 425px) {
+  .title-and-descr {
+    width: 90%;
+    .btn {
+      button {
+        width: 40%;
+      }
+    }
+  }
+};

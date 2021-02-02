@@ -1,0 +1,28 @@
+.context {
+  width: 60%;
+  margin: 170px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+};
+
+@media screen and(max-width: 1440px) {
+  .context{
+    width: 65%;
+    margin-top: 100px;
+  }
+};
+
+@media screen and(max-width: 1024px) {
+  .context{
+    margin-top: 100px;
+  }
+};
+
+@media screen and(max-width: 768px) {
+  .context{
+    width: 80%;
+    margin-top: 100px;
+    display: block;
+  }
+};

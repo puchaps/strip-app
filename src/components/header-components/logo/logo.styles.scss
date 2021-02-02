@@ -1,0 +1,25 @@
+@media screen and(max-width: 1024px) {
+  .logo {
+    img {
+      width: 85px;
+    }
+  }
+};
+
+@media screen and(max-width: 768px) {
+  .logo {
+    width: 60%;
+    img {
+      width: 85px;
+    }
+  }
+};
+
+@media screen and(max-width: 425px) {
+  .logo {
+    width: 55%;
+    img {
+      width: 85px;
+    }
+  }
+};

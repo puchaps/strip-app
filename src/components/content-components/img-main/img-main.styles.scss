@@ -1,0 +1,30 @@
+.img-main {
+  img {
+    box-shadow: 0 1px 10px black;
+    border-radius: 40px
+  }
+};
+
+@media screen and(max-width: 1440px) {
+  .img-main {
+    img {
+      width: 80%;
+    }
+  }
+};
+
+@media screen and(max-width: 1024px) {
+  .img-main {
+    img {
+      display: block;
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+};
+
+@media screen and(max-width: 768px) {
+  .img-main {
+    display: none;
+  }
+};

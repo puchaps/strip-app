@@ -1,0 +1,37 @@
+.modal-mobile {
+  position: absolute;
+  animation: animOpacity 0.5s ease;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .modal-block {
+    position: relative;
+    padding: 30px;
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px black;
+
+    .modal-close {
+      position: absolute;
+      font-size: 30px;
+      right: 5px;
+      top: 5px;
+    }
+  }
+};
+
+@keyframes animOpacity {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+};

@@ -1,12 +1,12 @@
-import Container from "./components/container/container.component";
-import MainContextProvired from "./context/context";
+import React from "react";
 
-const App = () => {
-  return (
-    <MainContextProvired>
-      <Container/>
-    </MainContextProvired>
-  );
-}
+import Container from "./components/container/container.component";
+import MainContextProvider from "./context/context";
+
+const App = () => (
+  <MainContextProvider>
+    <Container />
+  </MainContextProvider>
+);
 
 export default App;

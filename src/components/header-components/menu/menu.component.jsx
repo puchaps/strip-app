@@ -1,20 +1,21 @@
-import { useContext } from 'react';
-import { MainContext } from '../../../context/context';
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useContext } from "react";
 
-import './menu.styles.scss';
+import { MainContext } from "../../../context/context";
 
-import MenuItem from '../menu-item/menu-item.component';
+import "./menu.styles.scss";
+
+import MenuItem from "../menu-item/menu-item.component";
 
 const Menu = () => {
-  const {data} = useContext(MainContext);
-  
+  const { data } = useContext(MainContext);
+
   return (
     <menu className="menu">
-      {
-        data.map( (item, index) => {
-          return <MenuItem key = {index} {...item}/>
-        })
-      }
+      {data.map((item, index) => (
+        <MenuItem key={index} {...item} />
+      ))}
     </menu>
   );
 };

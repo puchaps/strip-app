@@ -1,30 +1,32 @@
-import React from 'react';
+import React from "react";
 
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
+import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
 
-export const SUB_LINK = [
+const pageLinks = [
   {
-    page: 'products',
+    page: "products",
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      { label: "payment", icon: <FaCreditCard />, url: "/products" },
+      { label: "terminal", icon: <FaCreditCard />, url: "/products" },
+      { label: "connect", icon: <FaCreditCard />, url: "/products" },
     ],
   },
   {
-    page: 'developers',
+    page: "developers",
     links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
+      { label: "plugins", icon: <FaBook />, url: "/products" },
+      { label: "libraries", icon: <FaBook />, url: "/products" },
+      { label: "help", icon: <FaBook />, url: "/products" },
+      { label: "billing", icon: <FaBook />, url: "/products" },
     ],
   },
   {
-    page: 'company',
+    page: "company",
     links: [
-      { label: 'about', icon: <FaBriefcase />, url: '/products' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: "about", icon: <FaBriefcase />, url: "/products" },
+      { label: "customers", icon: <FaBriefcase />, url: "/products" },
     ],
   },
 ];
+
+export default pageLinks;

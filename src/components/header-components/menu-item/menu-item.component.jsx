@@ -1,29 +1,32 @@
-import './menu-item.styles.scss';
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useState } from "react";
 
-import MenuLink from '../menu-link/menu-link.compoennts'
-import { useState } from 'react';
+import "./menu-item.styles.scss";
 
-const MenuItem = ({page, links}) => {
-  const showLinksFromPage = links.map( (item, index) => <MenuLink key = {index} {...item}/>)
-  const[toggleHiden, setToggleHiden] = useState(false);
+import MenuLink from "../menu-link/menu-link.component";
+
+const MenuItem = ({ page, links }) => {
+  const [toggleHidden, setToggleHidden] = useState(false);
 
   return (
-    <div 
+    <div
       className="menu-item"
-      onMouseOver = {() => setToggleHiden(true)}
-      onMouseOut = {() => setToggleHiden(false)}
+      onMouseOver={() => setToggleHidden(true)}
+      onMouseOut={() => setToggleHidden(false)}
     >
-      <div className="menu-item-links" >
-        <span className="link">
-          {page}
-        </span>
-        <div 
-          className={`menu-item-block ${toggleHiden ? 'active' : 'hide'}`}
-          onMouseOut = {() => setToggleHiden(false)}
+      <div className="menu-item-links">
+        <span className="link">{page}</span>
+        <div
+          className={`menu-item-block ${toggleHidden ? "active" : "hide"}`}
+          onMouseOut={() => setToggleHidden(false)}
         >
           <span>{page}:</span>
           <div className="menu-item-block-links">
-            {showLinksFromPage}
+            {links.map((item, index) => (
+              <MenuLink key={index} {...item} />
+            ))}
           </div>
         </div>
       </div>

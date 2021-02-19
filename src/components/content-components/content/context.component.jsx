@@ -1,15 +1,15 @@
-import './content.style.scss';
+import React from "react";
 
-import TitleAndDescr from '../title-and-descr/title-and-descr.component';
-import ImgMain from '../img-main/img-main.component';
+import "./content.style.scss";
 
-const Context = () => {
-  return (
-    <section className="context">
-      <TitleAndDescr/>
-      <ImgMain/>
-    </section>
-  );
-};
+import TitleAndDescription from "../title-and-desc/title-and-desc";
+import ImgMain from "../img-main/img-main.component";
+
+const Context = () => (
+  <section className="context">
+    <TitleAndDescription />
+    <ImgMain />
+  </section>
+);
 
 export default Context;
